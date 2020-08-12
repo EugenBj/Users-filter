@@ -1,0 +1,16 @@
+<%- include("header") -%>
+
+    <div class="container">
+      <%- include("hitachi") -%>
+      <div><%= usersNumber %> Results</div>
+      <div class="row">
+        <% usersFinal.forEach(function(item){ %>
+        <div class="col-lg-3 col-md-6">
+          <p><b><%= item.title %></b></p><hr>
+          <p><%= item.body %></p>
+        </div>
+      <% }) %>
+      </div>
+    </div>
+
+<%- include("footer") -%>
